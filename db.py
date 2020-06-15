@@ -1,7 +1,7 @@
 from flask import jsonify
 import pymysql
 
-def query(querystr):
+def query(querystr,return_json=True):
     connection=pymysql.connect(host='skillup-team-11.cxgok3weok8n.ap-south-1.rds.amazonaws.com',
                                user='admin',
                                password='coscskillup',

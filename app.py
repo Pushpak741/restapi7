@@ -6,6 +6,5 @@ app=Flask(__name__)
 api=Api(app)
 
 api.add_resource(Ppl,'/people')
-
-
-app.run(port="8055",debug=True)
+if __name__=='__main__':
+    app.run()
